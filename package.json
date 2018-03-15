@@ -1,13 +1,26 @@
 {
   "name": "react-my-example1",
   "version": "1.0.0",
-  "description": "",
+  "description": "The react example: Tabs",
+  "keywords": [
+    "react",
+    "reactjs",
+    "tabs"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wangyichen",
   "license": "MIT",
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/wangyichen1064431086/react-my-example1.git"
+  },
+  "bugs":{
+    "url": "https://github.com/wangyichen1064431086/react-my-example1/issues"
+  },
+  "homepage": "https://github.com/wangyichen1064431086/react-my-example1",
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.1",

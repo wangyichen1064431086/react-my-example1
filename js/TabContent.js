@@ -42,3 +42,5 @@ class TabContent extends Component {
     )
   }
 }
+
+export default TabContent;

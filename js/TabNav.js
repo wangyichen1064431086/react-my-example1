@@ -72,3 +72,5 @@ class TabNav extends React.Component {
     )
   }
 } 
+
+export default TabNav;
