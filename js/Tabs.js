@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';//A simple javascript utility for conditionally joining classNames together.
+import styles from '../css/style.scss';
 
 
 
