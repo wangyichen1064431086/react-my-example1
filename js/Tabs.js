@@ -13,7 +13,7 @@ class Tabs extends React.Component {
       PropTypes.node
     ]),
     defaultActiveIndex:PropTypes.number,
-    activeIndex:PropTypes.number
+    activeIndex:PropTypes.number,
     onChange:PropTypes.func
 
   };
