@@ -36,7 +36,7 @@ class App extends React.Component {
           </select>
         </div>
 
-        <Tabs defaultActiveIndex={this.state.activeIndex} className="tabs-bar">
+        <Tabs activeIndex={this.state.activeIndex} className="tabs-bar">
           <TabPane order="0" tab="Tab 1">
             第一个Tab里的内容
           </TabPane>

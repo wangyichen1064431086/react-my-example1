@@ -66,7 +66,8 @@ class Tabs extends React.Component {
      */
     const prevIndex = this.state.activeIndex;
 
-    if (this.state.activeIndex !== activeIndex && 'defaultActiveIndex' in this.props) {//如果当前的state.activeIndex与传入的activeIndex不等，且props有内部的defaultActiveIndex,更新state.activeIndx为外部传入的activeIndex
+    //if (this.state.activeIndex !== activeIndex && 'defaultActiveIndex' in this.props) {//如果当前的state.activeIndex与传入的activeIndex不等，且props有内部的defaultActiveIndex,更新state.activeIndx为外部传入的activeIndex
+    if (this.state.activeIndex !== activeIndex) {
       this.setState({
         activeIndex,
         prevIndex
