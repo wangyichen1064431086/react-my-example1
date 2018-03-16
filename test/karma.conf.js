@@ -79,7 +79,7 @@ module.exports = function(config) {
     },
     webpackMiddleware: {
       noInfo: true
-    }
+    },
 
 
     // web server port

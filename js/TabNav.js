@@ -8,7 +8,7 @@ class TabNav extends React.Component {
     onTabClick: PropTypes.func,
     panels: PropTypes.node,
     activeIndex: PropTypes.number
-  }
+  };
 
   getTabs() {
     const {classPrefix, panels,activeIndex} = this.props;

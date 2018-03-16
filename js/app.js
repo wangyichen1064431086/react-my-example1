@@ -16,9 +16,9 @@ class App extends React.Component {
   }
 
   handleChange(e) {
-    this.setState{
-      activeIndex: e.target.value;//NOTE:target就是option元素
-    }
+    this.setState({
+      activeIndex: parseInt(e.target.value, 10)//NOTE:target就是option元素
+    })
   }
 
   render() {

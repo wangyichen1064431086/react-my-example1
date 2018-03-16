@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';//A simple javascript utility for conditionally joining classNames together.
 import styles from '../css/style.scss';
-
+import TabNav from './TabNav';
+import TabContent from './TabContent';
 
 
 class Tabs extends React.Component {
@@ -54,7 +55,7 @@ class Tabs extends React.Component {
      */
     if ('activeIndex' in nextProps) {
       this.setState({
-        activeIndex:nextProps.activeIndex;
+        activeIndex:nextProps.activeIndex
       })
     }
   }

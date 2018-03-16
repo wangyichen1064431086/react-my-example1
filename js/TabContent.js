@@ -7,7 +7,7 @@ class TabContent extends Component {
     classPrefix: PropTypes.string,
     panels:PropTypes.node,
     activeIndex: PropTypes.number
-  }
+  };
 
   getTabPanes() {
     const {classPrefix, panels, activeIndex} = this.props;
