@@ -67,11 +67,12 @@ class Tabs extends React.Component {
     const prevIndex = this.state.activeIndex;
 
     //if (this.state.activeIndex !== activeIndex && 'defaultActiveIndex' in this.props) {//如果当前的state.activeIndex与传入的activeIndex不等，且props有内部的defaultActiveIndex,更新state.activeIndx为外部传入的activeIndex
-    if (this.state.activeIndex !== activeIndex) {
+    if (this.state.activeIndex !== activeIndex) {//MARK:这样修改之后，不管有没有defaultActiveIndex属性，都可以内部更新state, 所以原Tabs上的defaultActiveIndex属性是为了开关内部更新触发机制。所以现在是defualtActiveIndex是无效的，设了没设是一样的。
       this.setState({
         activeIndex,
         prevIndex
       });
+      //这样就是没法控制上层的select
       this.props.onChange({activeIndex, prevIndex});//来自于defaultProps
       /**
        * NOTE:这是es6的模拟命名参数
