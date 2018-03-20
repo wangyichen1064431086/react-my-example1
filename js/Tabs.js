@@ -16,13 +16,12 @@ class Tabs extends React.Component {
     ]),
     defaultActiveIndex:PropTypes.number,
     activeIndex:PropTypes.number,
-    onChange:PropTypes.func
-
+    onChange: PropTypes.func
   };
 
   static defaultProps = {//默认props,组件的props是来自于 默认属性 或 从父组件传递而来
     classPrefix:'tabs', //class前缀，对于组件来说，定义一个统一的class前缀，对样式与交互分离起了非常重要的作用
-    onChange:() => {}//当切换tab时，外组件需要知道组件内部的信息。
+    onChange: () => {}//当切换tab时，外组件需要知道组件内部的信息。
   };
 
   constructor(props) {
