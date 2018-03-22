@@ -41,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.10",
+    "identity-obj-proxy": "^3.0.0",
     "istanbul-instrumenter-loader": "^3.0.0",
     "jest": "^22.4.2",
     "karma": "^2.0.0",
@@ -62,5 +63,13 @@
     "webpack": "^4.1.1",
     "webpack-dev-server": "^3.1.1",
     "webpack-hot-middleware": "^2.21.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
+
 }
